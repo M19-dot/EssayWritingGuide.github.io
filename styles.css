@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    /* vh 是view height 既视窗高度的意思，100就是100%占满窗口高度 */
+    height: 100vh;
+    background-color: #eee;
+}
+
+html,
+.root {
+    font-size: 16px;
+    font-family: 'Noto Serif SC', serif;
+}
+
+.flex {
+    display: flex;
+}
+
+/* 占满比例 */
+.flex1 {
+    flex: 1;
+}
+
+.flex2 {
+    flex: 38.8vw;
+}
+
+.flex3 {
+    flex: 50vw;
+}
+
+/* 竖向 */
+.column {
+    flex-direction: column;
+}
+
+/* 上下左右外边距 */
+.mgtrbl {
+    margin: 24px 4.5vw 36px 4.5vw;
+}
+
+/* 右外边距 */
+.mgr {
+    margin-right: 2.3vw;
+}
+
+/* 上外边距 */
+.mgt {
+    margin-top: 1.5em;
+}
+
+/* 下外边距 */
+.mgb {
+    margin-bottom: 1.5em;
+}
+
+/* 去除边距 */
+.mg0 {
+    margin: 0;
+}
+
+.titlecn {
+    font-size: 3em;
+}
+
+.titleen {
+    font-size: 1.8em;
+}
+
+.author {
+    font-size: 1.3em;
+}
+
+/* 当屏幕宽度小于600px时要改变的css */
+@media (max-width: 600px) {
+
+    /* article flex方向改为竖向 */
+    .article {
+        flex-direction: column;
+    }
+
+    /* article外边距，大小改为自动宽高 */
+    .articleL {
+        margin: 0 0 8px;
+        flex: auto;
+    }
+
+    .articleR {
+        margin: 0 0 8px;
+        flex: auto;
+    }
+}
+
+/* 分割线 */
+.divider {
+    border-bottom: 1px solid #000;
+    /* margin-top: 1em;*/
+    margin-bottom: 1.5em;
+    clear: right;
+}
+
+.divider2 {
+    width: 38vw;
+    border-bottom: 1px solid #000;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    clear: right;
+}
+
+.divider3 {
+    border-left: 1px solid #000;
+    margin-left: 1em;
+    margin-right: 1em;
+    clear: bottom;
+}
+
+/* 中文内文 */
+.articleL {
+    font-size: 1em;
+    line-height: 1.6em;
+    font-weight: 200;
+    text-align: justify;
+}
+
+/* 英文内文 */
+.articleR {
+    font-size: 0.833em;
+    line-height: 1.5em;
+    font-weight: 200;
+    text-align: justify;
+}
+
+/* heading */
+.heading {
+    flex: 1;
+}
+
+.headingcn {
+    font-size: 1.97em;
+}
+
+.headingen {
+    font-size: 1.85em;
+    line-height: 1em;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.part {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    font-weight: 700;
+}
+
+.num {
+    font-size: 5.4em;
+    line-height: 1em;
+    padding-left: 1em;
+    font-weight: 400;
+}
+
+.subheading {
+    flex: 1;
+}
+
+.subheadingcn,
+.subheadingen {
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+.biggerF {
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+.italicF {
+    font-style: italic;
+}
+
+.underL {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    -webkit-text-decoration-skip: none;
+}
+
+.quote {
+    margin-left: 3em;
+}
+
+.fontW {
+    font-weight: 700;
+}
+
+.aStyle {
+    color: #0563c1;
+}
+
+
+@font-face {}
